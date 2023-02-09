@@ -30,10 +30,10 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/status"
 
 	v2discoverypb "github.com/envoyproxy/go-control-plane/envoy/api/v2"
 	v2discoverygrpc "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v2"

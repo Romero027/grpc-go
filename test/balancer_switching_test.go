@@ -23,20 +23,20 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/testutils/fakegrpclb"
-	"google.golang.org/grpc/internal/testutils/pickfirst"
-	rrutil "google.golang.org/grpc/internal/testutils/roundrobin"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/resolver/manual"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/credentials/insecure"
+	"github.com/Romero027/grpc-go/internal"
+	"github.com/Romero027/grpc-go/internal/balancer/stub"
+	"github.com/Romero027/grpc-go/internal/channelz"
+	"github.com/Romero027/grpc-go/internal/stubserver"
+	"github.com/Romero027/grpc-go/internal/testutils/fakegrpclb"
+	"github.com/Romero027/grpc-go/internal/testutils/pickfirst"
+	rrutil "github.com/Romero027/grpc-go/internal/testutils/roundrobin"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/resolver/manual"
 
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	testpb "github.com/Romero027/grpc-go/test/grpc_testing"
 )
 
 const (

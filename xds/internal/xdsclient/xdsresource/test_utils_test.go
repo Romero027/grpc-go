@@ -23,7 +23,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/internal/grpctest"
+	"github.com/Romero027/grpc-go/internal/grpctest"
 	"google.golang.org/protobuf/testing/protocmp"
 )
 

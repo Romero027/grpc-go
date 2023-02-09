@@ -23,17 +23,17 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/roundrobin"
-	"google.golang.org/grpc/balancer/weightedtarget/weightedaggregator"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/internal/balancer/stub"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/balancer/roundrobin"
+	"github.com/Romero027/grpc-go/balancer/weightedtarget/weightedaggregator"
+	"github.com/Romero027/grpc-go/connectivity"
+	"github.com/Romero027/grpc-go/credentials/insecure"
+	"github.com/Romero027/grpc-go/internal/balancer/stub"
+	"github.com/Romero027/grpc-go/internal/channelz"
+	"github.com/Romero027/grpc-go/internal/grpctest"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/resolver"
 )
 
 const (

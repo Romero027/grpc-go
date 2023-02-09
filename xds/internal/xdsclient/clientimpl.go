@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc/internal/cache"
-	"google.golang.org/grpc/internal/grpclog"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
+	"github.com/Romero027/grpc-go/internal/cache"
+	"github.com/Romero027/grpc-go/internal/grpclog"
+	"github.com/Romero027/grpc-go/internal/grpcsync"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/bootstrap"
 )
 
 var _ XDSClient = &clientImpl{}

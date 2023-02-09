@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/resolver"
 )
 
 func (s) TestIgnoreResolveNowClientConn(t *testing.T) {

@@ -25,12 +25,12 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/internal/testutils/xds/e2e"
-	"google.golang.org/grpc/xds/internal/httpfilter"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/Romero027/grpc-go/internal/envconfig"
+	"github.com/Romero027/grpc-go/internal/pretty"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/internal/testutils/xds/e2e"
+	"github.com/Romero027/grpc-go/xds/internal/httpfilter"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/types/known/durationpb"
 
 	v1udpatypepb "github.com/cncf/udpa/go/udpa/type/v1"
@@ -52,8 +52,8 @@ import (
 	spb "github.com/golang/protobuf/ptypes/struct"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
 
-	_ "google.golang.org/grpc/xds/internal/httpfilter/rbac"   // Register the RBAC HTTP filter.
-	_ "google.golang.org/grpc/xds/internal/httpfilter/router" // Register the router filter.
+	_ "github.com/Romero027/grpc-go/xds/internal/httpfilter/rbac"   // Register the RBAC HTTP filter.
+	_ "github.com/Romero027/grpc-go/xds/internal/httpfilter/router" // Register the router filter.
 )
 
 func (s) TestUnmarshalListener_ClientSide(t *testing.T) {

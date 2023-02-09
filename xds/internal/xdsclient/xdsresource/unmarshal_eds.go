@@ -27,8 +27,8 @@ import (
 	v3endpointpb "github.com/envoyproxy/go-control-plane/envoy/config/endpoint/v3"
 	v3typepb "github.com/envoyproxy/go-control-plane/envoy/type/v3"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/internal/pretty"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/Romero027/grpc-go/internal/pretty"
+	"github.com/Romero027/grpc-go/xds/internal"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 

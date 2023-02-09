@@ -30,25 +30,25 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/balancer/base"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/backoff"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/internal/grpcsync"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/balancer/base"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/connectivity"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/internal/backoff"
+	"github.com/Romero027/grpc-go/internal/channelz"
+	"github.com/Romero027/grpc-go/internal/grpcsync"
+	iresolver "github.com/Romero027/grpc-go/internal/resolver"
+	"github.com/Romero027/grpc-go/internal/transport"
+	"github.com/Romero027/grpc-go/keepalive"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/serviceconfig"
+	"github.com/Romero027/grpc-go/status"
 
-	_ "google.golang.org/grpc/balancer/roundrobin"           // To register roundrobin.
-	_ "google.golang.org/grpc/internal/resolver/dns"         // To register dns resolver.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // To register passthrough resolver.
-	_ "google.golang.org/grpc/internal/resolver/unix"        // To register unix resolver.
+	_ "github.com/Romero027/grpc-go/balancer/roundrobin"           // To register roundrobin.
+	_ "github.com/Romero027/grpc-go/internal/resolver/dns"         // To register dns resolver.
+	_ "github.com/Romero027/grpc-go/internal/resolver/passthrough" // To register passthrough resolver.
+	_ "github.com/Romero027/grpc-go/internal/resolver/unix"        // To register unix resolver.
 )
 
 const (

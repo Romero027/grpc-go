@@ -23,7 +23,7 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/grpctest"
+	"github.com/Romero027/grpc-go/internal/grpctest"
 	"google.golang.org/protobuf/testing/protocmp"
 
 	v2corepb "github.com/envoyproxy/go-control-plane/envoy/api/v2/core"

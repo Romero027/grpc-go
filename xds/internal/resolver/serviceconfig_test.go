@@ -25,10 +25,10 @@ import (
 
 	xxhash "github.com/cespare/xxhash/v2"
 	"github.com/google/go-cmp/cmp"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/metadata"
-	_ "google.golang.org/grpc/xds/internal/balancer/cdsbalancer" // To parse LB config
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	iresolver "github.com/Romero027/grpc-go/internal/resolver"
+	"github.com/Romero027/grpc-go/metadata"
+	_ "github.com/Romero027/grpc-go/xds/internal/balancer/cdsbalancer" // To parse LB config
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 func (s) TestPruneActiveClusters(t *testing.T) {

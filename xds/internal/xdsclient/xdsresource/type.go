@@ -22,7 +22,7 @@ import (
 
 	v3discoverypb "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource/version"
 	"google.golang.org/protobuf/types/known/anypb"
 )
 

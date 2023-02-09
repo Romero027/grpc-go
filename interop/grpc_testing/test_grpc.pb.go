@@ -25,9 +25,9 @@ package grpc_testing
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/Romero027/grpc-go"
+	codes "github.com/Romero027/grpc-go/codes"
+	status "github.com/Romero027/grpc-go/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -48,7 +48,7 @@ const (
 
 // TestServiceClient is the client API for TestService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type TestServiceClient interface {
 	// One empty request followed by one empty response.
 	EmptyCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -552,7 +552,7 @@ const (
 
 // UnimplementedServiceClient is the client API for UnimplementedService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type UnimplementedServiceClient interface {
 	// A call that no server should implement
 	UnimplementedCall(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -645,7 +645,7 @@ const (
 
 // ReconnectServiceClient is the client API for ReconnectService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type ReconnectServiceClient interface {
 	Start(ctx context.Context, in *ReconnectParams, opts ...grpc.CallOption) (*Empty, error)
 	Stop(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*ReconnectInfo, error)
@@ -772,7 +772,7 @@ const (
 
 // LoadBalancerStatsServiceClient is the client API for LoadBalancerStatsService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type LoadBalancerStatsServiceClient interface {
 	// Gets the backend distribution for RPCs sent by a test client.
 	GetClientStats(ctx context.Context, in *LoadBalancerStatsRequest, opts ...grpc.CallOption) (*LoadBalancerStatsResponse, error)
@@ -904,7 +904,7 @@ const (
 
 // XdsUpdateHealthServiceClient is the client API for XdsUpdateHealthService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type XdsUpdateHealthServiceClient interface {
 	SetServing(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
 	SetNotServing(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
@@ -1031,7 +1031,7 @@ const (
 
 // XdsUpdateClientConfigureServiceClient is the client API for XdsUpdateClientConfigureService service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type XdsUpdateClientConfigureServiceClient interface {
 	// Update the tes client's configuration.
 	Configure(ctx context.Context, in *ClientConfigureRequest, opts ...grpc.CallOption) (*ClientConfigureResponse, error)

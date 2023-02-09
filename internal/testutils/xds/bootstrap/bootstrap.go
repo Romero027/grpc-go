@@ -24,8 +24,8 @@ import (
 	"fmt"
 	"os"
 
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/envconfig"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/internal/envconfig"
 )
 
 var logger = grpclog.Component("internal/xds")

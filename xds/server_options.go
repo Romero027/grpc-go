@@ -21,8 +21,8 @@ package xds
 import (
 	"net"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/connectivity"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/connectivity"
 )
 
 type serverOptions struct {

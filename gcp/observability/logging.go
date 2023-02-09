@@ -30,12 +30,12 @@ import (
 	gcplogging "cloud.google.com/go/logging"
 	"github.com/google/uuid"
 
-	"google.golang.org/grpc"
-	binlogpb "google.golang.org/grpc/binarylog/grpc_binarylog_v1"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/binarylog"
-	iblog "google.golang.org/grpc/internal/binarylog"
-	"google.golang.org/grpc/internal/grpcutil"
+	"github.com/Romero027/grpc-go"
+	binlogpb "github.com/Romero027/grpc-go/binarylog/grpc_binarylog_v1"
+	"github.com/Romero027/grpc-go/internal"
+	"github.com/Romero027/grpc-go/internal/binarylog"
+	iblog "github.com/Romero027/grpc-go/internal/binarylog"
+	"github.com/Romero027/grpc-go/internal/grpcutil"
 )
 
 var lExporter loggingExporter

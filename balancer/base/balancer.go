@@ -22,10 +22,10 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/connectivity"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/resolver"
 )
 
 var logger = grpclog.Component("balancer")

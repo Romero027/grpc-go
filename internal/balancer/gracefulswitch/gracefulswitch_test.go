@@ -27,13 +27,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/connectivity"
+	"github.com/Romero027/grpc-go/internal/grpcsync"
+	"github.com/Romero027/grpc-go/internal/grpctest"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/serviceconfig"
 )
 
 const (

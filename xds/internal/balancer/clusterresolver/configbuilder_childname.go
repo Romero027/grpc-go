@@ -20,8 +20,8 @@ package clusterresolver
 import (
 	"fmt"
 
-	"google.golang.org/grpc/xds/internal"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/xds/internal"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // nameGenerator generates a child name for a list of priorities (each priority

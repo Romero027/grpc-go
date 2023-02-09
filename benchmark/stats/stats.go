@@ -30,7 +30,7 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
+	"github.com/Romero027/grpc-go"
 )
 
 // FeatureIndex is an enum for features that usually differ across individual

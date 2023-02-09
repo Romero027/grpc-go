@@ -23,9 +23,9 @@ import (
 
 	anypb "github.com/golang/protobuf/ptypes/any"
 	spb "google.golang.org/genproto/googleapis/rpc/status"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/internal/grpctest"
+	"github.com/Romero027/grpc-go/status"
 )
 
 type s struct {

@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/grpctest"
-	"google.golang.org/grpc/internal/serviceconfig"
+	"github.com/Romero027/grpc-go/internal/grpctest"
+	"github.com/Romero027/grpc-go/internal/serviceconfig"
 )
 
 type s struct {

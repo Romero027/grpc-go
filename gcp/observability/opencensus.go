@@ -28,8 +28,8 @@ import (
 	"go.opencensus.io/plugin/ocgrpc"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/trace"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/internal"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/internal"
 )
 
 var (

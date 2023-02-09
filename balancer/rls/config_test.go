@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	_ "google.golang.org/grpc/balancer/grpclb"               // grpclb for config parsing.
-	_ "google.golang.org/grpc/internal/resolver/passthrough" // passthrough resolver.
+	_ "github.com/Romero027/grpc-go/balancer/grpclb"               // grpclb for config parsing.
+	_ "github.com/Romero027/grpc-go/internal/resolver/passthrough" // passthrough resolver.
 )
 
 // testEqual reports whether the lbCfgs a and b are equal. This is to be used

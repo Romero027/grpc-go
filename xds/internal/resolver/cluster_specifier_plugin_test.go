@@ -23,14 +23,14 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal"
-	iresolver "google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
-	"google.golang.org/grpc/xds/internal/balancer/clustermanager"
-	"google.golang.org/grpc/xds/internal/clusterspecifier"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/internal"
+	iresolver "github.com/Romero027/grpc-go/internal/resolver"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/serviceconfig"
+	"github.com/Romero027/grpc-go/xds/internal/balancer/clustermanager"
+	"github.com/Romero027/grpc-go/xds/internal/clusterspecifier"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 func init() {

@@ -30,9 +30,9 @@ import (
 	"reflect"
 	"time"
 
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/tls/certprovider"
-	credinternal "google.golang.org/grpc/internal/credentials"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/credentials/tls/certprovider"
+	credinternal "github.com/Romero027/grpc-go/internal/credentials"
 )
 
 // VerificationFuncParams contains parameters available to users when

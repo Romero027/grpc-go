@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/orca/internal"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/orca/internal"
+	"github.com/Romero027/grpc-go/status"
 
 	v3orcapb "github.com/cncf/xds/go/xds/data/orca/v3"
 	v3orcaservicegrpc "github.com/cncf/xds/go/xds/service/orca/v3"

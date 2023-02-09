@@ -24,12 +24,12 @@
 // In the default logger,
 // severity level can be set by environment variable GRPC_GO_LOG_SEVERITY_LEVEL,
 // verbosity level can be set by GRPC_GO_LOG_VERBOSITY_LEVEL.
-package grpclog // import "google.golang.org/grpc/grpclog"
+package grpclog // import "github.com/Romero027/grpc-go/grpclog"
 
 import (
 	"os"
 
-	"google.golang.org/grpc/internal/grpclog"
+	"github.com/Romero027/grpc-go/internal/grpclog"
 )
 
 func init() {

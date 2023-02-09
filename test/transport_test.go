@@ -24,14 +24,14 @@ import (
 	"sync"
 	"testing"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/grpcsync"
-	"google.golang.org/grpc/internal/stubserver"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/status"
-	testpb "google.golang.org/grpc/test/grpc_testing"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/internal/grpcsync"
+	"github.com/Romero027/grpc-go/internal/stubserver"
+	"github.com/Romero027/grpc-go/internal/transport"
+	"github.com/Romero027/grpc-go/status"
+	testpb "github.com/Romero027/grpc-go/test/grpc_testing"
 )
 
 // connWrapperWithCloseCh wraps a net.Conn and fires an event when closed.

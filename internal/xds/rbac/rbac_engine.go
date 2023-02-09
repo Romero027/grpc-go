@@ -29,14 +29,14 @@ import (
 	"strconv"
 
 	v3rbacpb "github.com/envoyproxy/go-control-plane/envoy/config/rbac/v3"
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/transport"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/internal/transport"
+	"github.com/Romero027/grpc-go/metadata"
+	"github.com/Romero027/grpc-go/peer"
+	"github.com/Romero027/grpc-go/status"
 )
 
 var logger = grpclog.Component("rbac")

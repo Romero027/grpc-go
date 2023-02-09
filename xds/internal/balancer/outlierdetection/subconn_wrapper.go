@@ -20,9 +20,9 @@ package outlierdetection
 import (
 	"unsafe"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/internal/buffer"
-	"google.golang.org/grpc/resolver"
+	"github.com/Romero027/grpc-go/balancer"
+	"github.com/Romero027/grpc-go/internal/buffer"
+	"github.com/Romero027/grpc-go/resolver"
 )
 
 // subConnWrapper wraps every created SubConn in the Outlier Detection Balancer,

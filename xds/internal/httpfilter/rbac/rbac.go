@@ -27,11 +27,11 @@ import (
 
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
-	"google.golang.org/grpc/internal"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/resolver"
-	"google.golang.org/grpc/internal/xds/rbac"
-	"google.golang.org/grpc/xds/internal/httpfilter"
+	"github.com/Romero027/grpc-go/internal"
+	"github.com/Romero027/grpc-go/internal/envconfig"
+	"github.com/Romero027/grpc-go/internal/resolver"
+	"github.com/Romero027/grpc-go/internal/xds/rbac"
+	"github.com/Romero027/grpc-go/xds/internal/httpfilter"
 	"google.golang.org/protobuf/types/known/anypb"
 
 	v3rbacpb "github.com/envoyproxy/go-control-plane/envoy/config/rbac/v3"

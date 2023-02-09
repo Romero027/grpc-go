@@ -19,7 +19,7 @@
 package xdsclient
 
 import (
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 func appendMaps(dst, src map[string]map[string]xdsresource.UpdateWithMD) {

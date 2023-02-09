@@ -32,13 +32,13 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"google.golang.org/grpc/balancer"
-	grpclbstate "google.golang.org/grpc/balancer/grpclb/state"
-	"google.golang.org/grpc/internal/envconfig"
-	"google.golang.org/grpc/internal/leakcheck"
-	"google.golang.org/grpc/internal/testutils"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/Romero027/grpc-go/balancer"
+	grpclbstate "github.com/Romero027/grpc-go/balancer/grpclb/state"
+	"github.com/Romero027/grpc-go/internal/envconfig"
+	"github.com/Romero027/grpc-go/internal/leakcheck"
+	"github.com/Romero027/grpc-go/internal/testutils"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/serviceconfig"
 )
 
 func TestMain(m *testing.M) {

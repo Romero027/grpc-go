@@ -19,8 +19,8 @@
 package testutils
 
 import (
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource/version"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource/version"
 )
 
 // BuildResourceName returns the resource name in the format of an xdstp://

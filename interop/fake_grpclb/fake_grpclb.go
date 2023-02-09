@@ -25,12 +25,12 @@ import (
 	"flag"
 	"strings"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/credentials/alts"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/testutils/fakegrpclb"
-	"google.golang.org/grpc/testdata"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/credentials/alts"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/internal/testutils/fakegrpclb"
+	"github.com/Romero027/grpc-go/testdata"
 )
 
 var (

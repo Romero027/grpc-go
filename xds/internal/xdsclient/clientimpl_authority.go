@@ -21,8 +21,8 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // findAuthority returns the authority for this name. If it doesn't already

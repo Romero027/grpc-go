@@ -18,7 +18,7 @@
 package xdsresource
 
 import (
-	"google.golang.org/grpc/internal/pretty"
+	"github.com/Romero027/grpc-go/internal/pretty"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 )

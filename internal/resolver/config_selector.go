@@ -23,9 +23,9 @@ import (
 	"context"
 	"sync"
 
-	"google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
+	"github.com/Romero027/grpc-go/internal/serviceconfig"
+	"github.com/Romero027/grpc-go/metadata"
+	"github.com/Romero027/grpc-go/resolver"
 )
 
 // ConfigSelector controls what configuration to use for every RPC.

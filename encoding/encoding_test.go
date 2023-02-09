@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/internal/grpcutil"
+	"github.com/Romero027/grpc-go/internal/grpcutil"
 )
 
 type mockNamedCompressor struct {

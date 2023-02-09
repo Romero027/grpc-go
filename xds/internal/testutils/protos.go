@@ -27,7 +27,7 @@ import (
 	v3corepb "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	v2typepb "github.com/envoyproxy/go-control-plane/envoy/type"
 	wrapperspb "github.com/golang/protobuf/ptypes/wrappers"
-	"google.golang.org/grpc/xds/internal"
+	"github.com/Romero027/grpc-go/xds/internal"
 )
 
 // EmptyNodeProtoV2 is a v2 Node proto with no fields set.

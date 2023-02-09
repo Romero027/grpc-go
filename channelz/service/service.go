@@ -25,15 +25,15 @@ import (
 
 	"github.com/golang/protobuf/ptypes"
 	wrpb "github.com/golang/protobuf/ptypes/wrappers"
-	"google.golang.org/grpc"
-	channelzgrpc "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go"
+	channelzgrpc "github.com/Romero027/grpc-go/channelz/grpc_channelz_v1"
+	channelzpb "github.com/Romero027/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/connectivity"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/internal/channelz"
+	"github.com/Romero027/grpc-go/status"
 )
 
 func init() {
@@ -45,7 +45,7 @@ var logger = grpclog.Component("channelz")
 // RegisterChannelzServiceToServer registers the channelz service to the given server.
 //
 // Note: it is preferred to use the admin API
-// (https://pkg.go.dev/google.golang.org/grpc/admin#Register) instead to
+// (https://pkg.go.dev/github.com/Romero027/grpc-go/admin#Register) instead to
 // register Channelz and other administrative services.
 func RegisterChannelzServiceToServer(s grpc.ServiceRegistrar) {
 	channelzgrpc.RegisterChannelzServer(s, newCZServer())

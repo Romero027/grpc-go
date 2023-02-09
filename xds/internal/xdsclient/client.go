@@ -21,9 +21,9 @@
 package xdsclient
 
 import (
-	"google.golang.org/grpc/xds/internal/xdsclient/bootstrap"
-	"google.golang.org/grpc/xds/internal/xdsclient/load"
-	"google.golang.org/grpc/xds/internal/xdsclient/xdsresource"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/bootstrap"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/load"
+	"github.com/Romero027/grpc-go/xds/internal/xdsclient/xdsresource"
 )
 
 // XDSClient is a full fledged gRPC client which queries a set of discovery APIs

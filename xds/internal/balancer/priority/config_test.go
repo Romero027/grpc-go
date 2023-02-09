@@ -22,8 +22,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"google.golang.org/grpc/balancer/roundrobin"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
+	"github.com/Romero027/grpc-go/balancer/roundrobin"
+	internalserviceconfig "github.com/Romero027/grpc-go/internal/serviceconfig"
 )
 
 func TestParseConfig(t *testing.T) {

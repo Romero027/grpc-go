@@ -36,8 +36,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"golang.org/x/sys/unix"
-	channelzpb "google.golang.org/grpc/channelz/grpc_channelz_v1"
-	"google.golang.org/grpc/internal/channelz"
+	channelzpb "github.com/Romero027/grpc-go/channelz/grpc_channelz_v1"
+	"github.com/Romero027/grpc-go/internal/channelz"
 	"google.golang.org/protobuf/testing/protocmp"
 )
 

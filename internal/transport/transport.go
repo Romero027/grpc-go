@@ -32,15 +32,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/credentials"
-	"google.golang.org/grpc/internal/channelz"
-	"google.golang.org/grpc/keepalive"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
-	"google.golang.org/grpc/stats"
-	"google.golang.org/grpc/status"
-	"google.golang.org/grpc/tap"
+	"github.com/Romero027/grpc-go/codes"
+	"github.com/Romero027/grpc-go/credentials"
+	"github.com/Romero027/grpc-go/internal/channelz"
+	"github.com/Romero027/grpc-go/keepalive"
+	"github.com/Romero027/grpc-go/metadata"
+	"github.com/Romero027/grpc-go/resolver"
+	"github.com/Romero027/grpc-go/stats"
+	"github.com/Romero027/grpc-go/status"
+	"github.com/Romero027/grpc-go/tap"
 )
 
 // ErrNoHeaders is used as a signal that a trailers only response was received,
@@ -833,6 +833,8 @@ type channelzData struct {
 // ContextErr converts the error from context package into a status error.
 func ContextErr(err error) error {
 	switch err {
+	case context.DeadlineExceeded:
+		return status.Error(codes.DeadlineExceeded, err.Error())
 	case context.Canceled:
 		return status.Error(codes.Canceled, err.Error())
 	}

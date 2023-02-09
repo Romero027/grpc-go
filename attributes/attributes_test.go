@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"testing"
 
-	"google.golang.org/grpc/attributes"
+	"github.com/Romero027/grpc-go/attributes"
 )
 
 type stringVal struct {

@@ -36,7 +36,7 @@ import (
 	v3cache "github.com/envoyproxy/go-control-plane/pkg/cache/v3"
 	v3resource "github.com/envoyproxy/go-control-plane/pkg/resource/v3"
 	v3server "github.com/envoyproxy/go-control-plane/pkg/server/v3"
-	"google.golang.org/grpc"
+	"github.com/Romero027/grpc-go"
 )
 
 // ManagementServer is a thin wrapper around the xDS control plane

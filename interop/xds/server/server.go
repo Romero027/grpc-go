@@ -27,20 +27,20 @@ import (
 	"net"
 	"os"
 
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/admin"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/health"
-	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/reflection"
-	"google.golang.org/grpc/xds"
+	"github.com/Romero027/grpc-go"
+	"github.com/Romero027/grpc-go/admin"
+	"github.com/Romero027/grpc-go/credentials/insecure"
+	"github.com/Romero027/grpc-go/grpclog"
+	"github.com/Romero027/grpc-go/health"
+	"github.com/Romero027/grpc-go/metadata"
+	"github.com/Romero027/grpc-go/reflection"
+	"github.com/Romero027/grpc-go/xds"
 
-	xdscreds "google.golang.org/grpc/credentials/xds"
-	healthgrpc "google.golang.org/grpc/health/grpc_health_v1"
-	healthpb "google.golang.org/grpc/health/grpc_health_v1"
-	testgrpc "google.golang.org/grpc/interop/grpc_testing"
-	testpb "google.golang.org/grpc/interop/grpc_testing"
+	xdscreds "github.com/Romero027/grpc-go/credentials/xds"
+	healthgrpc "github.com/Romero027/grpc-go/health/grpc_health_v1"
+	healthpb "github.com/Romero027/grpc-go/health/grpc_health_v1"
+	testgrpc "github.com/Romero027/grpc-go/interop/grpc_testing"
+	testpb "github.com/Romero027/grpc-go/interop/grpc_testing"
 )
 
 var (

@@ -22,10 +22,10 @@ import (
 	"errors"
 	"fmt"
 
-	"google.golang.org/grpc/balancer"
-	rlspb "google.golang.org/grpc/internal/proto/grpc_lookup_v1"
-	internalserviceconfig "google.golang.org/grpc/internal/serviceconfig"
-	"google.golang.org/grpc/serviceconfig"
+	"github.com/Romero027/grpc-go/balancer"
+	rlspb "github.com/Romero027/grpc-go/internal/proto/grpc_lookup_v1"
+	internalserviceconfig "github.com/Romero027/grpc-go/internal/serviceconfig"
+	"github.com/Romero027/grpc-go/serviceconfig"
 
 	"google.golang.org/protobuf/encoding/protojson"
 )

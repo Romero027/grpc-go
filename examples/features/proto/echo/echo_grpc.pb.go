@@ -25,9 +25,9 @@ package echo
 
 import (
 	context "context"
-	grpc "google.golang.org/grpc"
-	codes "google.golang.org/grpc/codes"
-	status "google.golang.org/grpc/status"
+	grpc "github.com/Romero027/grpc-go"
+	codes "github.com/Romero027/grpc-go/codes"
+	status "github.com/Romero027/grpc-go/status"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -44,7 +44,7 @@ const (
 
 // EchoClient is the client API for Echo service.
 //
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
+// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/github.com/Romero027/grpc-go/?tab=doc#ClientConn.NewStream.
 type EchoClient interface {
 	// UnaryEcho is unary echo.
 	UnaryEcho(ctx context.Context, in *EchoRequest, opts ...grpc.CallOption) (*EchoResponse, error)

@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-	altspb "google.golang.org/grpc/credentials/alts/internal/proto/grpc_gcp"
-	"google.golang.org/grpc/peer"
-	"google.golang.org/grpc/status"
+	"github.com/Romero027/grpc-go/codes"
+	altspb "github.com/Romero027/grpc-go/credentials/alts/internal/proto/grpc_gcp"
+	"github.com/Romero027/grpc-go/peer"
+	"github.com/Romero027/grpc-go/status"
 )
 
 const (
