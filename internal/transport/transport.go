@@ -833,8 +833,6 @@ type channelzData struct {
 // ContextErr converts the error from context package into a status error.
 func ContextErr(err error) error {
 	switch err {
-	case context.DeadlineExceeded:
-		return status.Error(codes.DeadlineExceeded, err.Error())
 	case context.Canceled:
 		return status.Error(codes.Canceled, err.Error())
 	}
