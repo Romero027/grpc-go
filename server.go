@@ -158,6 +158,8 @@ type serverOptions struct {
 	streamInt             StreamServerInterceptor
 	chainUnaryInts        []UnaryServerInterceptor
 	chainStreamInts       []StreamServerInterceptor
+	ADNPro                ADNServerProcessor
+	chainADNPros          []ADNServerProcessor
 	binaryLogger          binarylog.Logger
 	inTapHandle           tap.ServerInHandle
 	statsHandlers         []stats.Handler
@@ -397,6 +399,19 @@ func MaxConcurrentStreams(n uint32) ServerOption {
 func Creds(c credentials.TransportCredentials) ServerOption {
 	return newFuncServerOption(func(o *serverOptions) {
 		o.creds = c
+	})
+}
+
+// UnaryInterceptor returns a ServerOption that sets the UnaryServerInterceptor for the
+// server. Only one unary interceptor can be installed. The construction of multiple
+// interceptors (e.g., chaining) can be implemented at the caller.
+func ADNProcessor(i ADNServerProcessor) ServerOption {
+	fmt.Println(i)
+	return newFuncServerOption(func(o *serverOptions) {
+		if o.ADNPro != nil {
+			panic("The ADN processor was already set and may not be reset.")
+		}
+		o.ADNPro = i
 	})
 }
 

@@ -53,9 +53,12 @@ func init() {
 type dialOptions struct {
 	unaryInt  UnaryClientInterceptor
 	streamInt StreamClientInterceptor
+	ADNPro    ADNClientProcessor
 
 	chainUnaryInts  []UnaryClientInterceptor
 	chainStreamInts []StreamClientInterceptor
+
+	chainADNPros []ADNClientProcessor
 
 	cp                          Compressor
 	dc                          Decompressor
@@ -473,6 +476,14 @@ func WithKeepaliveParams(kp keepalive.ClientParameters) DialOption {
 func WithUnaryInterceptor(f UnaryClientInterceptor) DialOption {
 	return newFuncDialOption(func(o *dialOptions) {
 		o.unaryInt = f
+	})
+}
+
+// WithUnaryInterceptor returns a DialOption that specifies the interceptor for
+// unary RPCs.
+func WithADNProcessor(f ADNClientProcessor) DialOption {
+	return newFuncDialOption(func(o *dialOptions) {
+		o.ADNPro = f
 	})
 }
 

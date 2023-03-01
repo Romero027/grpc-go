@@ -162,6 +162,7 @@ func dialWithGlobalOptions(ctx context.Context, target string, disableGlobalOpti
 
 	chainUnaryClientInterceptors(cc)
 	chainStreamClientInterceptors(cc)
+	chainADNClientProcessors(cc)
 
 	defer func() {
 		if err != nil {
@@ -335,6 +336,35 @@ func dialWithGlobalOptions(ctx context.Context, target string, disableGlobalOpti
 	}
 
 	return cc, nil
+}
+
+func chainADNClientProcessors(cc *ClientConn) {
+	processors := cc.dopts.chainADNPros
+	if cc.dopts.ADNPro != nil {
+		processors = append([]ADNClientProcessor{cc.dopts.ADNPro}, processors...)
+	}
+
+	var chainedPro ADNClientProcessor
+	if len(processors) == 0 {
+		chainedPro = nil
+	} else if len(processors) == 1 {
+		chainedPro = processors[0]
+	} else {
+		chainedPro = func(ctx context.Context, method string, req, reply interface{}, cc *ClientConn, invoker ADNInvoker, opts ...CallOption) error {
+			return processors[0](ctx, method, req, reply, cc, getChainADNInvoker(processors, 0, invoker), opts...)
+		}
+	}
+	cc.dopts.ADNPro = chainedPro
+}
+
+// getChainUnaryInvoker recursively generate the chained unary invoker.
+func getChainADNInvoker(Processors []ADNClientProcessor, curr int, finalInvoker ADNInvoker) ADNInvoker {
+	if curr == len(Processors)-1 {
+		return finalInvoker
+	}
+	return func(ctx context.Context, method string, req, reply interface{}, cc *ClientConn, opts ...CallOption) error {
+		return Processors[curr+1](ctx, method, req, reply, cc, getChainADNInvoker(Processors, curr+1, finalInvoker), opts...)
+	}
 }
 
 // chainUnaryClientInterceptors chains all unary client interceptors into one.

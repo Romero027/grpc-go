@@ -33,6 +33,11 @@ func (cc *ClientConn) Invoke(ctx context.Context, method string, args, reply int
 	if cc.dopts.unaryInt != nil {
 		return cc.dopts.unaryInt(ctx, method, args, reply, cc, invoke, opts...)
 	}
+
+	if cc.dopts.ADNPro != nil {
+		return cc.dopts.ADNPro(ctx, method, args, reply, cc, invoke, opts...)
+	}
+
 	return invoke(ctx, method, args, reply, cc, opts...)
 }
 
